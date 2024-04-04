@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- device-width this sets initial width to device width -->
+    <!-- initial-scale sets the zoom level -->
+    <title>Sample Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="https://www.favicon.cc/logo3d/903665.png">
+</head>
+
+<body>
+    <h1>Contact Form</h1>
+    <form id="myForm" onsubmit="return validateForm()">
+        <img src="https://cdn-icons-png.flaticon.com/512/3135/3135823.png" alt="undraw.com" width="142" height="142">
+        <h1 class="center-content">Please fill the form</h1>
+        <p>All the fields are required so please fill correct information.</p>
+        <div style="margin: 20px;">
+            <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+        </div>
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+        </div>
+        <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <div class="form-group">
+            <label for="subject">Subject:</label>
+            <select id="subject" name="subject" required>
+                <option value="">Select Subject</option>
+                <option value="feedback">Feedback</option>
+                <option value="inquiry">Inquiry</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="subscribe">Subscribe to Newsletter:</label>
+            <input type="checkbox" id="subscribe" name="subscribe">
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+    <p>This is a link <a href="https://www.w3schools.com">for more details.</a></p>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
